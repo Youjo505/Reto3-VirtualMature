@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="7_juegos.css">
+
+<body>
+
+<header>
+    
+    <div class="flex-container">
+<!--start logo nav-->       
+        <div class="logo">
+            <img class="logotipo" src="imagenes/Ranalogo.png" width="120" height="120" alt="VIRTUALMATURElogo" />
+        </div>
+<!--end logo nav-->
+    
+        <div class="navegador"></div>
+<!-- start nav -->
+            <nav id="menu">
+<!-- start menu -->
+                <ul>
+                    <li><a href="1_Index.html">Inicio</a></li>
+                    <li><a href="#">Servicios</a>
+<!-- start menu desplegable -->
+                    <ul class="plegable">
+                        <li><a href="2_Servicios.html"><pre>Servicios</pre></a></li>
+                        <li><a href="4_Tienda.html"><pre>   Tienda</pre></a></li>
+                        <li><a href="7_juegos.html"><pre>  Juegos</pre></a></li>
+                    </ul>
+<!-- end menu desplegable -->
+                    </li>
+                    <li><a href="#">Información</a>
+<!-- start menu desplegable -->
+                    <ul class="informacion">
+                        <li><a href="3_Sobrenosotros.html"><pre>   sobre <br>  nosotros<br/></pre> </a></li>
+                        <li><a href="5_Contacto.html"><pre>   Contacto</pre></a></li>
+                    </ul>
+<!-- end menu desplegable -->
+<!-- end menu -->
+            </nav>
+<!-- end nav -->
+        </div>
+    </div>
+</header>
+    <div id="juego1">
+<h1>Piedra, Papel o Tijeras</h1>
+    <div id="game">
+        <button class="option" onclick="playGame('piedra')">Piedra</button>
+        <button class="option" onclick="playGame('papel')">Papel</button>
+        <button class="option" onclick="playGame('tijeras')">Tijeras</button>
+    </div>
+    <p id="result"></p>
+    </div>
+    <div id="juego2">
+    <h1>Adivina el número</h1>
+    <p>Intenta adivinar un número entre 1 y 100:</p>
+    <input type="text" id="numeroUsuario">
+    <button onclick="adivinarNumero()">Adivinar</button>
+    <p id="resultado"></p>
+    </div>
+    <script src="7_juegos.js"></script>
+
+</body>

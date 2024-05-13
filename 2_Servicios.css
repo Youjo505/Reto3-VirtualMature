@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 1em sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+
+header {
+    background-color: #2d2929;
+    padding: 9px;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+/*imagen */
+.logotipo {
+    display: flex;
+    width: 70px;
+    height: 70px;
+}
+
+.flex-container img{
+    justify-content: flex-start;
+    margin-left: -521px;
+}
+
+/* menu */
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+   
+/* items del menu */
+   
+/* enlaces del menu */
+#menu ul a {
+    display:block;
+    color:#e6e4e4;
+    text-decoration:none;
+    font-weight:550;
+    font-size:24px;
+    padding:10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+   
+/* items del menu */
+#menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+   
+/* efecto al pasar el ratón por los items del menu */ 
+#menu ul li:hover {
+    background:#cea5a5;
+
+}
+
+/* menu desplegable */
+
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#cea5a5;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding:0;
+}
+   
+/* items del menu desplegable */
+
+#plegable li {
+    float:none;
+}
+
+#informacion li {
+    float:none;
+    width:180px;
+}
+
+/* enlaces de los items del menu desplegable */
+#menu ul ul a {
+    line-height:100%;
+}
+   
+/* items del menu desplegable al pasar el ratón */
+#menu ul li:hover > ul {
+    display:block;
+}
+
+/*flex container del encabezdo*/
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicios { 
+    font-size: 50px;
+    margin-top: 10px;
+    color: #000;
+}
+
+.ofrecemos {
+    color: rgb(255, 255, 255);
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.ofrecer{
+    width: 100%;
+    background-color: #2d2929;
+}
+
+h1 {
+    color: rgb(245, 245, 245);
+    text-align: center;
+    font-size: 35px;
+}
+
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .service-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  p {
+    color: #666;
+  }
+
+  #ov-btn-slide-left {
+    background: #e8e6e6; /* color de fondo */
+    color: #0c0b0b; /* color de fuente */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  #ov-btn-slide-left:hover {
+    color: #fff; /* color de fuente hover */
+  }
+  #ov-btn-slide-left::after {
+    content: "";
+    background: #d2dc40; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  #ov-btn-slide-left:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    margin-left: -20px;
+    z-index: 10000;
+  }

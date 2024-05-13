@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="5_Contacto.css" />
+    <meta name="author" content="Eneko, Nico, Iker, Jon">
+    <title>Virtual Mature</title>
+    <link rel="icon" type="image/x-icon" href="https://www.limitdbox.com/wp-content/uploads/2022/10/relajao_400x400.jpg">
+</head>
+
+<body>
+    
+<header>
+    
+    <div class="flex-container">
+<!--start logo nav-->       
+        <div class="logo">
+            <img class="logotipo" src="imagenes/Ranalogo.png" width="120" height="120" alt="VIRTUALMATURElogo" />
+        </div>
+<!--end logo nav-->
+    
+        <div class="navegador"></div>
+<!-- start nav -->
+            <nav id="menu">
+<!-- start menu -->
+                <ul>
+                    <li><a href="1_Index.html">Inicio</a></li>
+                    <li><a href="#">Servicios</a>
+<!-- start menu desplegable -->
+                    <ul class="plegable">
+                        <li><a href="2_Servicios.html"><pre>Servicios</pre></a></li>
+                        <li><a href="4_Tienda.html"><pre>   Tienda</pre></a></li>
+                        <li><a href="7_juegos.html"><pre>  Juegos</pre></a></li>
+                    </ul>
+<!-- end menu desplegable -->
+                    </li>
+                    <li><a href="#">Información</a>
+<!-- start menu desplegable -->
+                    <ul class="informacion">
+                        <li><a href="3_Sobrenosotros.html"><pre>   sobre <br>  nosotros<br/></pre> </a></li>
+                        <li><a href="5_Contacto.html"><pre>   Contacto</pre></a></li>
+                    </ul>
+<!-- end menu desplegable -->
+<!-- end menu -->
+            </nav>
+<!-- end nav -->
+        </div>
+    </div>
+</header>
+
+<!--start caja de contacto-->
+<section class="main">
+    <section class=" main-section">
+<!--start mensaje inicial-->
+      <h1 class="titulo">¡¡¡CONTACTANOS!!!</h1>
+      <br>
+      <p>A través de este formulario puedes contactar directamente con nosotros, tanto como para solicitar imformacion, como para solicitar uno de nuestros servicios.</p>
+<!--end mensaje inicial-->
+          <hr>
+<!--start info-->
+          <form>
+            <h2>¿Porqué nos contacta?</h2>
+            <p>
+              <label class="Cuadrados"><input type="checkbox" name="donacion" /> Donacion</label>
+              <label class="Cuadrados"><input type="checkbox" name="servicios" /> Servicios</label>
+              <label class="Cuadrados"><input type="checkbox" name="otros" /> Otros</label>
+            </p>
+            <h2>Datos</h2>
+                <p>
+                    <label>Nombre: <br>
+                    <input type="text" name="Nombre" required /></label>
+                </p>
+                    <label>Apellidos: <br>
+                    <input type="text" name="Apellidos" required /></label>
+                </p>
+                <p>
+                    <label>Dirección de correo: <br>
+                    <input type="text" name="Correo" required /></label>
+                </p>
+                <p>
+                    <label>Numero de telefono <br>
+                    <input type="number" name="Telefono" /></label>
+                </p>
+                <p>
+                    <label>
+                    Tu mensaje:<br>
+                    <textarea name="mensaje"></textarea>
+                    </label>
+                </p>
+            <section class="botones">
+                <input class="boton" type="reset" value="Resetar" />
+                <input class="boton" type="submit" value="Enviar" />
+            </section>
+        </form>
+<!--end info-->
+    </section>
+</section>
+<!--end caja de contacto-->
+    <br>
+    <br>
+    <br>
+<!--start info-->
+    <footer>
+        <p>Derechos de autor © 2024 VIRTUAL MATURE</p>
+    </footer>
+<!--end info-->
+
+</body>

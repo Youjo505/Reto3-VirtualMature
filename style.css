@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #58d3f5;
+    padding: 30px;
+  }
+  
+  #contenedor {
+    width: 85%; 
+    justify-content: space-between; 
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+  }
+  
+  .cabecera {
+    background: #77b255; 
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 7s ease-in-out;
+  }
+  
+  .navegacion {
+    background: #ffa500;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .navegacion div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    flex-grow: 1;
+  }
+  
+  .cajas {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    flex-grow: 1;
+    background: #bd9241;
+  }
+  
+  .seccion {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out; 
+    background-color: antiquewhite;
+  }
+  
+  footer {
+    background: #ff6347;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(to right, transparent, rgb(177, 223, 37));
+  }
+  
+  header, nav, main, footer {
+    color: rgb(255, 239, 239);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .cabecera img, footer img {
+    max-width: 48%;
+    height: auto;
+  }
+  
+  
+  .cabecera:hover {
+    width: 60%;
+    height: 30%;
+    background-color: rgb(115, 115, 222);
+    color: blue;
+    font-size: 2.5em;
+  }
+  
+  
+  .cabecera img[alt="Imagen 2"]:hover {
+    transform: scale(0.7, 2);
+  }
+  
+  
+  #seccion1:hover,
+  #seccion3:hover {
+    transform: rotate(150deg);
+  }
+  
+  footer {
+    background: linear-gradient(to right, transparent, green);
+  }
+  
+  
+  @media screen and (min-width: 400px) and (max-width: 1300px) {
+    .navegacion {
+      display: block;
+    }
+
+    .navegacion div {
+        background-color: yellow;
+    }
+
+    .navegacion div:nth-child(2),
+    .navegacion div:nth-child(3) {
+      display: none;
+    }
+  }
+  
+  @keyframes movimientoM {
+    0%, 100% { transform: translateX(0); border-color: red; }
+    25% { transform: translateY(150px); border-color: green; }
+    50% { transform: translateX(300px) translateY(300px); border-color: blue; }
+    75% { transform: translateY(150px) translateX(600px); border-color: yellow; }
+  }
+  
+  #seccion2:hover {
+    animation: movimientoM 8s infinite;
+  }
+  

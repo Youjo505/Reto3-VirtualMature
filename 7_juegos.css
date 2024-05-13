@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 1em sans-serif;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: #2d2929;
+    padding: 9px;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+/*imagen */
+.logotipo {
+    display: flex;
+    width: 70px;
+    height: 70px;
+}
+
+.flex-container img{
+    justify-content: flex-start;
+    margin-left: -521px;
+}
+
+/* menu */
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+   
+/* items del menu */
+   
+/* enlaces del menu */
+#menu ul a {
+    display:block;
+    color:#e6e4e4;
+    text-decoration:none;
+    font-weight:550;
+    font-size:24px;
+    padding:10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+   
+/* items del menu */
+#menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+   
+/* efecto al pasar el ratón por los items del menu */ 
+#menu ul li:hover {
+    background:#cea5a5;
+
+}
+
+/* menu desplegable */
+
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#cea5a5;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding:0;
+}
+   
+/* items del menu desplegable */
+
+#plegable li {
+    float:none;
+}
+
+#informacion li {
+    float:none;
+    width:180px;
+}
+
+/* enlaces de los items del menu desplegable */
+#menu ul ul a {
+    line-height:100%;
+}
+   
+/* items del menu desplegable al pasar el ratón */
+#menu ul li:hover > ul {
+    display:block;
+}
+
+/*flex container del encabezdo*/
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-top: 60px;
+}
+
+#game {
+    margin-top: 20px;
+}
+
+#result {
+    margin-top: 10px;
+}
+
+.option {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.option:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+input[type="text"] {
+    width: 10%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#resultado {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#juego1 {
+    background-color: #ccc;
+}
+
+#juego2 {
+    background-color: #ccc;
+}

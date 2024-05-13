@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: 1em sans-serif;
+}
+body{
+  background-color: rgb(224, 224, 224);
+}
+
+header {
+  background-color: #2d2929;
+  padding: 9px;
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+/*imagen */
+
+.logotipo {
+  display: flex;
+  width: 70px;
+  height: 70px;
+}
+
+.flex-container img{
+  justify-content: flex-start;
+  margin-left: -520px;
+}
+
+/* menu */
+
+#menu {
+  margin-right: 100px;
+}
+
+#menu ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+ 
+/* items del menu */
+ 
+/* enlaces del menu */
+ 
+#menu ul a {
+  display:block;
+  color:#e6e4e4;
+  text-decoration:none;
+  font-weight:550;
+  font-size:24px;
+  padding:10px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+ 
+/* items del menu */
+ 
+#menu ul li {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
+}
+ 
+/* efecto al pasar el ratón por los items del menu */
+ 
+#menu ul li:hover {
+  background:#cea5a5;
+}
+
+/* menu desplegable */
+
+#menu ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:#cea5a5;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding:0;
+}
+ 
+/* items del menu desplegable */
+ 
+#plegable li {
+  float:none;
+  width:154px;
+}
+
+#informacion li {
+  float:none;
+  width:180px;
+}
+
+/* enlaces de los items del menu desplegable */
+ 
+#menu ul ul a {
+  line-height:100%;
+}
+ 
+/* items del menu desplegable al pasar el ratón */
+ 
+#menu ul li:hover > ul {
+  display:block;
+}
+
+.Registrarse{
+  margin-left: auto;
+  margin-right: 20px;
+  color:#e6e4e4;
+  text-decoration:none;
+  font-weight:550;
+  font-size:18px;
+  text-transform:uppercase;
+}
+
+.Registrarse a{
+  text-decoration: none;
+}
+
+.caja-registro {
+  background: #faf9f9; /* color de fondo */
+  color: #0e0b0b; /* color de fuente */
+  padding: 16px 20px;
+  border-radius: 3px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+}
+.caja-registro:hover {
+  color: #fff;/* color de fuente hover */
+}
+.caja-registro::after {
+  content: "";
+  background: #c80b0b;/* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0);
+  transition: all 0.7s ease;
+}
+.caja-registro:hover::after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
+}
+
+.flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  margin-left: 520px;
+}
+
+
+/*animado*/
+
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+.animado {
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse .92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse .92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse .92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse .92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.animado::before {
+  content:"VIRTUAL MATURE";
+  font-size: 8rem;
+  font-weight: 100;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  [class*="col-"] {
+    padding: 15px;
+  }
+
+  .caja_flex {
+    display: flex;
+  }
+
+  /*navegador de info*/
+  .col-1 {width: 8.33%;}
+  .col-3 {width: 25%;}
+  .col-9 {width: 75%;}
+  .col-3 {
+    font-size: 20px;
+  }
+  .col-9 {
+    font-size: 20px;
+  }
+
+   .info {
+    background-color: #2e2a30;
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 30px;
+    width: 290px;
+    font-size: 20px;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.menu li:hover{
+  background-color: #2e2a30;
+}
+
+  #direccion{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #a8aeac;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+  @media screen and (max-width: 600px) {
+    .v1 {
+      font-size: 16px;
+      }
+    }
+      
+
+/* info */
+
+
+
+  #caja-info{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .venta{
+    background: linear-gradient(to right, rgb(216, 86, 82), rgb(200, 23, 23));
+  }
+
+  .compra{
+    background: linear-gradient(to right, rgb(240, 232, 232), rgb(90, 91, 90));
+  }
+
+  .reparacion{
+    background: linear-gradient(to right, rgb(151, 176, 232), rgb(102, 83, 174));
+  }
+
+  .reciclaje{
+    background: linear-gradient(to right, rgb(196, 178, 114), rgb(104, 115, 17));
+  }
+  
+  #foto-caja, #texto-caja-info{
+    width:45%;
+    margin:1%;
+    padding: 1%;
+    border: 3px solid #2e2a30;	
+    text-align: justify;
+    font-size: 20px;
+  }
+  
+  #texto-caja-info{
+    color: rgb(7, 7, 7);
+    height: 270px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    #texto-caja-info {
+      font-size: 90%
+  }
+  }
+
+  @media screen and (max-width: 600px) {
+    #texto-caja-info {
+      font-size: 80%
+  }
+  }
+  
+  .foto-caja1 {
+    background-image: url(https://ultimainformatica.com/img/cms/TIENDAS/tienda%20de%20informatica%20ultima%20sur%20de%20tenerife-7.jpg);
+    background-size: cover;
+  }
+
+  .foto-caja2 {
+    background-image: url(https://indexdesarrollo.com/wp-content/uploads/2016/06/comprar-ordenador-nuevo.jpg);
+    background-size: cover;
+  }
+
+  .foto-caja3 {
+    background-image: url(https://www.serinfor.net/wp-content/uploads/reparacionpc.jpg.webp);
+    background-size: cover;
+  }
+
+  .foto-caja4 {
+    background-image: url(https://bloygo.yoigo.com/embed/4b6b586fe30f6d03e03f4a813f659080cd1550233516/ReciclarAparatos.jpg);
+    background-size: cover;
+  }
+  
+  #texto-caja{
+    font-weight: bold;
+  }

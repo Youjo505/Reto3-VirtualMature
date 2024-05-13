@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 1em sans-serif;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: #2d2929;
+    padding: 9px;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+/*imagen */
+.logotipo {
+    display: flex;
+    width: 70px;
+    height: 70px;
+}
+
+.flex-container img{
+    justify-content: flex-start;
+    margin-left: -521px;
+}
+
+/* menu */
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+   
+/* items del menu */
+   
+/* enlaces del menu */
+#menu ul a {
+    display:block;
+    color:#e6e4e4;
+    text-decoration:none;
+    font-weight:550;
+    font-size:24px;
+    padding:10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+   
+/* items del menu */
+#menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+   
+/* efecto al pasar el ratón por los items del menu */ 
+#menu ul li:hover {
+    background:#cea5a5;
+
+}
+
+/* menu desplegable */
+
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#cea5a5;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding:0;
+}
+   
+/* items del menu desplegable */
+
+#plegable li {
+    float:none;
+}
+
+#informacion li {
+    float:none;
+    width:180px;
+}
+
+/* enlaces de los items del menu desplegable */
+#menu ul ul a {
+    line-height:100%;
+}
+   
+/* items del menu desplegable al pasar el ratón */
+#menu ul li:hover > ul {
+    display:block;
+}
+
+/*flex container del encabezdo*/
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*mansaje de inicio*/
+.sobrenosotros { 
+    font-size: 50px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+h1 {
+    color: rgb(251, 244, 244);
+    text-align: center;
+    font-size: 35px;
+}
+
+.bienvenido {
+    background-color: #2d2929;
+}
+
+/*items y de empleados*/
+.empleados {
+    color: rgb(0, 0, 0);
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.img-empleado {
+    height: 200px;
+    width: 220px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    padding: 10px;
+  }
+
+  .img-empleado1 {
+    height: 200px;
+    width: 220px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    padding: 10px;
+    animation: rotation 10s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .empleado1,.empleado, .empleado2, .img-empleado1, .img-empleado {
+      height: 80%;
+      width: 80%;
+  }
+  }
+
+.empleado{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 110%;
+}
+
+.empleado1{
+    text-align: center;
+    background-color: rgb(248, 244, 244);
+    color: rgb(3, 3, 3);
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    font-size: 110%;
+}
+
+.r3 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #2d2929;
+}
+
+.empleado2{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 2, 2);
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 110%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.Quehacemos{
+    font-size: 35px;
+    color: rgb(4, 4, 4);
+    margin-top: 15px;
+    margin-bottom: -8px;
+  }
+
+  footer {
+    background-color: #0e0101;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: auto;
+  }
